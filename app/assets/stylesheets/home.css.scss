@@ -1,0 +1,73 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body{
+  height: 100%;
+}
+
+.bheader{
+  height: 100px;
+  position: fixed;
+  z-index: 1000;
+  .bheader-img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.bnavbar-left{
+  z-index:100; 
+  position: fixed; 
+  top: 100px;
+  background-color: rgba(100, 100, 100, 0.7);
+  .binner-control{
+    padding: 20px;
+    background-color: white; 
+    text-align:center;
+    background-color: rgba(100, 100, 100, 0);
+    .bbtn-group{
+      .bbtn{
+        color: white !important;
+        border: none;
+        background-color: rgba(100, 100, 100, 0);
+      }
+    }
+  }
+}
+
+.bnavbar-right{
+  z-index:10000; 
+  position: fixed;
+  right: 0px;
+  text-align: center;
+  padding: 30px;
+  top: 100px;
+  background-color: white;
+}
+
+.bblock{
+  position:relative;
+  height: 100%;
+  .full-img{
+    min-height: 100%;
+    background-size: cover;
+    .bpanel{
+      position: absolute;
+      bottom: 0px;
+      margin: 0px;
+      border: none;
+      background-color: rgba(100, 100, 100, 0.5);
+      .bpanel-body{
+        padding: 50px;
+        color: white;
+      }
+    }
+  }
+}
+
+.bup{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 10000000;
+}
