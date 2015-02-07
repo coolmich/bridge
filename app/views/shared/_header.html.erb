@@ -1,3 +1,11 @@
-<div class="bheader">
-  <%= image_tag "sample1.png", :class=>'bheader-img'%>
+<div class="bblock">
+  <div style="background-image: url(<%= asset_path imgName %>)" class="full-img">
+    <div class="col-md-6 col-md-offset-3 header-block col-xs-8">
+      <div class="panel panel-default headerpanel">
+        <div class="panel-body headerpanel-body">
+          <%= render 'shared/text', :btitle=>"欢迎来到莱茵桥", :btext=>"茵莱桥团队本着品质第一，价格合理，客户至上的宗旨，公司团队核心成员由旅美多年的华裔精英以及道地美国人组成，对美国文化、教育、生活有切身体会和丰富经验，为您量身定制最佳行程, 让您的旅程省心、舒心、放心!", :titleclass=>'title1', :textclass=>'text1' %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

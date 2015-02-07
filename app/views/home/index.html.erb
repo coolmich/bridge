@@ -1,11 +1,29 @@
 <%= render 'leftnav'%>
 <%= render 'rightnav'%>
 
-<%= render "block", :imgName => 'sample1.png', :text => "Lorem ipsum dolor sit amet, legimus ceteros cu sed, mea ea noster animal meliore. Choro soluta est ne, ex eum partem singulis, eu nam malis assueverit. Ne fugit ocurreret gloriatur eum. Ei alienum quaestio eum. Duo ad falli sonet deterruisset, ex omittam dissentiunt per.
+<div class="bfloat">
+  <%= image_tag "xialingying.png", :class=>'img-rounded'%>
+</div>
 
-  Est prima aliquid repudiandae no. Vix quod quando at. Nec audire delicata ne. Cum dicit tation possim id, usu ea oportere repudiandae. Hinc dolore nam no, ex est vocent philosophia, sumo quaerendum ex cum." %>
 
-<%= render "block", :imgName => 'sample2.png', :text => "Lorem ipsum dolor sit amet, legimus ceteros cu sed, mea ea noster animal meliore. Choro soluta est ne, ex eum partem singulis, eu nam malis assueverit. Ne fugit ocurreret gloriatur eum. Ei alienum quaestio eum. Duo ad falli sonet deterruisset, ex omittam dissentiunt per." %>
+<%= render "block", :imgName => 'gongsijianjie.png', :text => "茵莱桥文化服务有限责任公司（Enlite Bridge, LLC）位于美国加州著名海滨度假胜地圣地亚哥市。我公司旨在促进中美两国日益频繁和深入的教育和文化交流，目前承接私人订制旅游、游学夏(冬)令营、留学寄宿、文化教育交流、商务技术考察等多项业务.", :block_id=>'gongsijianjie' %>
+
+<%= render "block", :imgName => 'guanyuwomen.png', :text => "黄怡，女，2000年毕业于北京交通大学，后留校任教。2002年随先生赴美，2004-2005年担任南加州交通大学校友会副会长及校友会年刊总编。2007年获加州州立大学弗乐敦分校会计学硕士学位并获得优秀毕业生称号。2006年进入国际第五大会计师事务所BDO实习，并于2007年毕业前即获BDO聘用为助理审计师，在职4年中先后升任审计师及资深审计师。2010年取得美国注册会计师执业执照。性格开朗随和，爱好广泛。现育有二子（6岁及3岁），与任职软件工程师的先生定居于南加州圣地亚哥市.", :block_id=>'guanyuwomen' %>
+
+<div class="bblock" id="kehupinglun">
+  <div style="background-image: url(<%= asset_path 'kehupinglun.png' %>)" class="full-img">
+    <div class="panel panel-default bpanel">
+      <div class="panel-body bpanel-body">
+        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
+        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
+        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
+        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
+        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="bup">
   <span class="glyphicon glyphicon glyphicon-chevron-up" style="color:white; "aria-hidden="true"></span>

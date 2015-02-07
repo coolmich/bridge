@@ -18,8 +18,10 @@ html, body{
 .bnavbar-left{
   z-index:100; 
   position: fixed; 
-  top: 100px;
-  background-color: rgba(100, 100, 100, 0.7);
+  top: 45%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 39px;
+  border: 5px solid #34A1C4;
   .binner-control{
     padding: 20px;
     background-color: white; 
@@ -27,7 +29,8 @@ html, body{
     background-color: rgba(100, 100, 100, 0);
     .bbtn-group{
       .bbtn{
-        color: white !important;
+        font-size: 24px;
+        color: #49C7D1 !important;
         border: none;
         background-color: rgba(100, 100, 100, 0);
       }
@@ -36,18 +39,26 @@ html, body{
 }
 
 .bnavbar-right{
+  color: #49C7D1 !important;
+  border: 5px solid #34A1C4;
   z-index:10000; 
   position: fixed;
   right: 0px;
   text-align: center;
   padding: 30px;
   top: 100px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 39px;
+  button{
+    color: #49C7D1 !important;
+    border-color: #49C7D1;
+  }
 }
 
 .bblock{
   position:relative;
   height: 100%;
+  font-size: 24px;
   .full-img{
     min-height: 100%;
     background-size: cover;
@@ -56,12 +67,23 @@ html, body{
       bottom: 0px;
       margin: 0px;
       border: none;
-      background-color: rgba(100, 100, 100, 0.5);
+      background-color: rgba(100, 150, 150, 0.5);
+      width: 100%;
       .bpanel-body{
-        padding: 50px;
+        line-height: 150%;
+        padding: 50px 220px;
         color: white;
       }
     }
+  }
+}
+
+.header-block{
+  margin-top:20%;
+  color: #49C7D1;
+  .headerpanel{
+    border: none;
+    background-color: rgba(100, 100, 100, 0);
   }
 }
 
@@ -70,4 +92,26 @@ html, body{
   right: 50px;
   bottom: 50px;
   z-index: 10000000;
+}
+
+.bfloat{
+  width: 160px;
+  top: 350px;
+  right: 0px;
+  z-index: 1000;
+  position: fixed;
+  img{
+    width: 100%;
+    border-radius: 100px;
+  }
+}
+
+.title1{
+  font-size: 50px;
+  color: #49C7D1;
+}
+.text1{
+  font-size: 20px;
+  color: #82979C;
+  line-height: 200%;
 }
