@@ -1,0 +1,119 @@
+<%= render 'shared/header', :imgName => 'header.png'%>
+<%= render 'leftnav'%>
+<%= render 'rightnavvertical'%>
+<div class="bfloat">
+  <%= image_tag "xialingying.png", :class=>'img-rounded'%>
+</div>
+
+
+
+<div class="bblock" id="gongsijianjie">
+  <div style="background-image: url(<%= asset_path 'gongsijianjie.png' %>)" class="full-img">
+    <div class="panel panel-default bpanel">
+      <div class="panel-body bpanel-body">
+        <p>茵莱桥文化服务有限责任公司（Enlite Bridge, LLC）位于美国加州著名海滨度假胜地圣地亚哥市。我公司旨在促进中美两国日益频繁和深入的教育和文化交流，目前承接<span style="font-size: 30px; font-style: italic; color: #2E99D0; font-weight: bold;">私人订制旅游、游学夏(冬)令营、留学寄宿、文化教育交流</span>等多项业务.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bblock" id="lvyoutuandui" style="height: 1000px;">
+  <div style="background-image: url(<%= asset_path 'lvyoutuandui.png' %>)" class="full-img">
+    <div class="panel panel-default bpanel">
+      <div class="panel-body bpanel-body">
+        <div style="text-align: left">
+          <%= image_tag "huangyi.png", :style=>'float: left; margin-right: 10px;'%>
+          <p style="font-size: 18px;">黄怡 | 总裁</p>
+          <p style="font-size: 18px;">Daizy Huang | CEO/Founder</p>
+          <p style="font-size: 18px;">美国加州茵莱桥文化服务有限公司总裁。北京交通大学毕业并留校任教，后赴美定居十余年，拥有美国加州州立大学会计学硕士学位，曾任全球第5大会计师事务所BDO资深审计师，现为美国执业注册会计师。黄女士育有两子，现与任职美国高通公司总部高级工程师的先生定居于美国加利福利亚州著名的海滨度假胜地圣地亚哥市.</p>
+        </div>
+        <br>
+        <br>
+        <div style="text-align: right">
+          <%= image_tag "liuyang.png", :style=>'float: right; margin-left: 10px;'%>
+          <p style="font-size: 18px;">刘阳 | 北美大区商务与医疗旅行部指定顾问</p>
+          <p style="font-size: 18px;">Yang Liu | Costomize Service Advisor</p>
+          <p style="font-size: 18px;">茵莱桥文化服务有限公司北美地区商务与医疗旅行部业务负责人。北京交通大学及俄亥俄州立大学毕业。十分熟悉并了解美国工业制造业展会相关信息和北美各大医院的学术专业方向，就诊流程以及国际接诊情况，熟知美国中东部景点，购物商圈，人文历史以各地及游览攻略，擅长整合优化旅游行程，按照客人需求平衡时间-路线-价格，致力于打造适应顾客个性化需求的文化服务新体系.</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="bblock" id="dingzhilvyou">
+  <div style="background-image: url(<%= asset_path 'dingzhilvyou.png' %>)" class="full-img">
+    <div class="panel panel-default bpanel">
+      <div class="panel-body bpanel-body">
+        <p>我经营私人定制旅游的四项原则是“灵活、周到、流畅、专业”。大家印象中的组团旅游一定是行程古鼎，早出晚归，大部分时间花在路上行车，而客人只能选择既定路线，不能灵活调整。所以在我的私人定制中，我希望能颠覆这种不够人性化的组团模式，给客人有更好的旅游体验。我会在行程前耐心了解客户需求，协助客人自主确定行程，旅程中也可以随时调整行程，并能为他们后续的一系列衍生需求提供完善专业的服务。
+          <span>
+            <%= link_to "了解更多信息", customize_path, :class=>'liaojiegengduo'%>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bblock" id="kehupinglun">
+  <div style="background-image: url(<%= asset_path 'kehupinglun.png' %>)" class="full-img">
+    <div class="panel panel-default bpanel">
+      <div class="panel-body bpanel-body">
+        <%= link_to comment_path(:id=>0) do%>
+          <p>1.来之前，我都没想到自己临走时会如此不舍。哎，明年夏天希望还能来吧...</p>
+        <% end %>
+        <%= link_to comment_path(:id=>1) do%>
+          <p>2.一路上，许多人对我祝福...每次对他们点头致谢，我总会感叹：美国真友爱啊!…</p>
+        <% end %>
+        <%= link_to comment_path(:id=>2) do%>
+          <p>3.茵莱桥贴心、轻松和灵活的行程安排让我们一下子找到了旅行的感觉...</p>
+        <% end %>
+        <%= link_to comment_path(:id=>3) do%>
+          <p>4.Daizy小姐花费了不少时间跟我们详细了解需求和沟通行程安排，一路上更是体贴细心...</p>
+        <% end %>
+        <%= link_to comment_path(:id=>4) do%>
+          <p>5.我们对茵莱桥的服务很满意，下次来美国还会选择他们！...</p>
+        <% end %>
+        <%= link_to comment_path(:id=>5) do%>
+          <p>6.茵莱桥的服务很周到，对于我们来之前的诸多问题和要求一一答复和满足...</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bblock" id="changjianwenti">
+  <div style="background-image: url(<%= asset_path 'changjianwenti.png' %>)" class="full-img">
+    <div class="panel panel-default bpanel">
+      <div class="panel-body bpanel-body">
+        <%= link_to question_path(:id=>0) do%>
+          <p> 1. 我们对美国不太了解，您能提供一份大致的行程安排吗？</p>
+        <% end %>
+        <%= link_to question_path(:id=>1) do%>
+          <p> 2. 您的价位是多少?</p>
+        <% end %>
+        <%= link_to question_path(:id=>2) do%>
+          <p> 3. 这个价格具体包含了什么?</p>
+        <% end %>
+        <%= link_to question_path(:id=>3) do%>
+          <p> 4. 我们孩子还小，可以选择不参加夏令营吗？</p>
+        <% end %>
+        <%= link_to question_path(:id=>4) do%>
+          <p> 5. 如果我们抵美之后希望改变行程，这样可行吗？</p>
+        <% end %>
+        <%= link_to question_path(:id=>5) do%>
+          <p> 6. 我们对购物很有兴趣，您行程策划中对购物有很多安排吗？</p>
+        <% end %>
+        <%= link_to question_path(:id=>6) do%>
+          <p> 7. 孩子参加全英文的夏令营能听懂吗？</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bup">
+  <span class="glyphicon glyphicon glyphicon-chevron-up" style="color:white; "aria-hidden="true"></span>
+</div>
+
+<%= render 'shared/footer', :imgName => 'lianxifangshi.png' %>

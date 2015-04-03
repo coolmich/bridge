@@ -1,8 +1,13 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@media(max-width: 600px){
+  font-size: 10px;
+}
 html, body{
   height: 100%;
+  min-width: 1200px !important;
 }
 
 .bheader{
@@ -18,7 +23,7 @@ html, body{
 .bnavbar-left{
   z-index:100; 
   position: fixed; 
-  top: 45%;
+  top: 30%;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 39px;
   border: 5px solid #34A1C4;
@@ -35,6 +40,16 @@ html, body{
         background-color: rgba(100, 100, 100, 0);
       }
     }
+  }
+}
+
+.bbutton{
+  border-radius: 39px;
+  border: 5px solid #34A1C4;
+  color: #34A1C4 !important;
+  button{
+    border: 2px solid #34A1C4;
+    border-radius: 10px !important;
   }
 }
 
@@ -57,7 +72,7 @@ html, body{
 
 .bblock{
   position:relative;
-  height: 100%;
+  height: 700px;
   font-size: 24px;
   .full-img{
     min-height: 100%;
@@ -67,19 +82,38 @@ html, body{
       bottom: 0px;
       margin: 0px;
       border: none;
-      background-color: rgba(100, 150, 150, 0.5);
       width: 100%;
+      background-color: rgba(100, 150, 150, 0.5);
       .bpanel-body{
+        font-size: 22px;
         line-height: 150%;
-        padding: 50px 220px;
+        padding: 50px 210px;
         color: white;
+        a{
+          color: white;
+        }
       }
     }
   }
 }
 
+.bpanelnocolor{
+  position: absolute;
+  bottom: 0px;
+  margin: 0px;
+  border: none;
+  width: 100%;
+  background-color: rgba(200, 200, 200, 0.1);
+  .bpanel-bodynocolor{
+    font-size: 22px;
+    line-height: 150%;
+    padding: 50px 200px;
+    color: #4CC3D4;
+  }
+}
+
 .header-block{
-  margin-top:20%;
+  margin-top:27%;
   color: #49C7D1;
   .headerpanel{
     border: none;
@@ -96,7 +130,7 @@ html, body{
 
 .bfloat{
   width: 160px;
-  top: 350px;
+  top: 450px;
   right: 0px;
   z-index: 1000;
   position: fixed;
@@ -114,4 +148,78 @@ html, body{
   font-size: 20px;
   color: #82979C;
   line-height: 200%;
+}
+
+
+
+
+.item-container{
+    a{
+      color: #fff;
+      &:hover{
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    background-color: #2c3e50;
+    width: 360px;
+    border-radius: 90px;
+    margin: 20px auto;
+    .image-item{
+      position: relative;
+      background-color: #1F2B38;
+      border-radius: 90px;
+      left: 0px;
+    }
+    .sm-title{
+      position: relative;
+      right: 100px;
+      color: white;
+      opacity: 0;
+      display: inline-block;
+    }
+    .h3-show{
+      position: relative;
+      display: inline-block;
+      color: #4E6A86;
+    }
+    &:hover{
+      background-color: #16a085;
+      .image-item{
+        position: relative;
+        left: 210px;
+        transition-duration: 0.5s;
+      }
+      .sm-title{
+        opacity: 1;
+        transition-duration: 2s;
+      }
+      .h3-show{
+        display: none;
+      }
+      transition-duration: 0.5s;
+    }
+  }
+.liaojiegengduo{
+  padding: 3px;
+  color: #34A1C4 !important;
+  border: 1px solid #34A1C4;
+  background-color: #D9EAEB;
+}
+
+.xuanzelvyou{
+  position: fixed; 
+  top: 30%; 
+  right: 0px;
+  color: #337AB7 !important;
+  z-index:100000; 
+  text-align: center;
+  border-radius: 39px;
+  padding: 20px;
+  border: 5px solid #34A1C4;
+  background-color: rgba(255, 255, 255, 0.5);
+  button{
+    border: 2px solid #34A1C4;
+    color: #337AB7 !important;
+  }
 }

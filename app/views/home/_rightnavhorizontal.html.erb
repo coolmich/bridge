@@ -1,0 +1,40 @@
+
+<div class="btn-group bbutton" role="group" style="float: right; padding: 30px;">
+  <p style="font-size: 20px;">搜索您感兴趣的旅游景点</p>
+ <div class="btn-group" style="display: block">
+    <button type="button" class="btn btn-default dropdown-toggle bbutton" data-toggle="dropdown" aria-expanded="false">
+      选择主题 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">主题公园</a></li>
+      <li><a href="#">国家森林公园</a></li>
+      <li><a href="#">名校校园</a></li>
+      <li><a href="#">特色项目</a></li>
+      <li><a href="#">体育活动</a></li>
+      <li><a href="#">海滩</a></li>
+      <li><a href="#">博物馆科技感</a></li>
+    </ul>
+  </div>
+ 
+  <div class="btn-group" style="display: block; margin-left: 10px;">
+    <button type="button" class="btn btn-default dropdown-toggle bbutton" data-toggle="dropdown" aria-expanded="false">
+      选择地区 <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li>
+        <%= link_to "洛杉矶", place_path(:id=>0)%>
+      </li>
+      <li>
+        <%= link_to "橙县", place_path(:id=>1)%>
+      </li>
+      <li><%= link_to "圣地亚哥", place_path(:id=>2)%></li>
+      <li><a href="#">旧金山</a></li>
+      <li><a href="#">1号公路</a></li>
+      <li class="divider"></li>
+      <li><a href="#">西雅图</a></li>
+      <li><a href="#">波特兰</a></li>
+      <li class="divider"></li>
+      <li><a href="#">拉斯维加斯</a></li>
+    </ul>
+  </div>
+</div>

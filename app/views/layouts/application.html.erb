@@ -2,13 +2,12 @@
 <html>
 <head>
   <title>Bridge</title>
+  <meta name="viewport" content="width=1000, height=500, initial-scale=1, maximum-scale=1">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= render 'shared/header', :imgName => 'header.png'%>
   <%= yield %>
-  <%= render 'shared/footer', :imgName => 'lianxifangshi.png' %>
 </body>
 </html>

@@ -1,30 +1,35 @@
-<%= render 'leftnav'%>
-<%= render 'rightnav'%>
-
-<div class="bfloat">
-  <%= image_tag "xialingying.png", :class=>'img-rounded'%>
-</div>
-
-
-<%= render "block", :imgName => 'gongsijianjie.png', :text => "茵莱桥文化服务有限责任公司（Enlite Bridge, LLC）位于美国加州著名海滨度假胜地圣地亚哥市。我公司旨在促进中美两国日益频繁和深入的教育和文化交流，目前承接私人订制旅游、游学夏(冬)令营、留学寄宿、文化教育交流、商务技术考察等多项业务.", :block_id=>'gongsijianjie' %>
-
-<%= render "block", :imgName => 'guanyuwomen.png', :text => "黄怡，女，2000年毕业于北京交通大学，后留校任教。2002年随先生赴美，2004-2005年担任南加州交通大学校友会副会长及校友会年刊总编。2007年获加州州立大学弗乐敦分校会计学硕士学位并获得优秀毕业生称号。2006年进入国际第五大会计师事务所BDO实习，并于2007年毕业前即获BDO聘用为助理审计师，在职4年中先后升任审计师及资深审计师。2010年取得美国注册会计师执业执照。性格开朗随和，爱好广泛。现育有二子（6岁及3岁），与任职软件工程师的先生定居于南加州圣地亚哥市.", :block_id=>'guanyuwomen' %>
-
-<div class="bblock" id="kehupinglun">
-  <div style="background-image: url(<%= asset_path 'kehupinglun.png' %>)" class="full-img">
-    <div class="panel panel-default bpanel">
-      <div class="panel-body bpanel-body">
-        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
-        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
-        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
-        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
-        <p>在来美国之前我就喜欢夏令营,感觉自信满满...</p>
+<div class="bblock">
+  <div style="background-image: url(<%= asset_path 'bg.png' %>)" class="full-img">
+    <div>
+      <div class="col-sm-12" style="text-align: center;">
+        <%= image_tag "logo.png", size: '300x270'%>
+      </div>
+      <div class="col-sm-6 col-sm-offset-3" style="text-align: center; color: white;">
+        <h2>茵莱桥文化服务有限责任公司</h2>
+        <h4>位于美国加州著名海滨度假胜地圣地亚哥市。我公司旨在促进中美两国日益频繁和深
+入的教育和文化交流，目前承接私人订制旅游、游学夏(冬)令营、留学寄宿、文化教
+                                        育交流等多项业务</h4>
+      </div>
+      <div class="col-sm-6">
+        <div class="item-container">
+          <%= link_to travel_path do%>
+            <div>
+              <%= image_tag "travellogo.png", size: '150x150', :class=>'image-item'%> <h3 class="sm-title">旅游</h3>
+              <h3 class="h3-show">旅游</h3>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="item-container">
+          <%= link_to "#" do%>
+            <div>
+              <%= image_tag "edulogo.png", size: '150x150', :class=>'image-item'%> <h3 class="sm-title">教育</h3>
+              <h3 class="h3-show">教育</h3>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
-<div class="bup">
-  <span class="glyphicon glyphicon glyphicon-chevron-up" style="color:white; "aria-hidden="true"></span>
 </div>

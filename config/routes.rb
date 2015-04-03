@@ -6,6 +6,14 @@ Bridge::Application.routes.draw do
   # root 'welcome#index'
   root 'home#index'
 
+  get 'travel' => 'home#travel'
+  get 'comment' => 'home#comment'
+
+  get 'question' => 'home#question'
+  get 'customize' => 'home#customize'
+
+  get 'place' => 'home#place'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
