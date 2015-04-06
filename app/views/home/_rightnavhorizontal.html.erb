@@ -6,13 +6,15 @@
       选择主题 <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" role="menu">
-      <li><a href="#">主题公园</a></li>
-      <li><a href="#">国家森林公园</a></li>
-      <li><a href="#">名校校园</a></li>
-      <li><a href="#">特色项目</a></li>
-      <li><a href="#">体育活动</a></li>
-      <li><a href="#">海滩</a></li>
-      <li><a href="#">博物馆科技感</a></li>
+      <li>
+        <%= link_to "主题公园", theme_path(:id=>0)%>
+      </li>
+      <li><%= link_to "国家森林公园", theme_path(:id=>1)%></li>
+      <li><%= link_to "名校项目", theme_path(:id=>2)%></li>
+      <li><%= link_to "特色项目", theme_path(:id=>3)%></li>
+      <li><%= link_to "体育活动", theme_path(:id=>4)%></li>
+      <li><%= link_to "海滩", theme_path(:id=>5)%></li>
+      <li><%= link_to "博物馆科技馆", theme_path(:id=>6)%></li>
     </ul>
   </div>
  

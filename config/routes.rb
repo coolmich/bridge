@@ -13,6 +13,11 @@ Bridge::Application.routes.draw do
   get 'customize' => 'home#customize'
 
   get 'place' => 'home#place'
+  get 'theme' => 'home#theme'
+
+  get 'edu' => 'educations#index'
+  get 'jiangzuo' => 'educations#jiangzuo'
+  get 'hezuo' => 'educations#hezuo'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,0 +1,52 @@
+.eduheader{
+  background-color: #43ED49;
+}
+
+.edu-block{
+  padding: 50px 300px;
+  color: white;
+
+}
+.school-block{
+  padding: 50px;
+  color: white;
+  background-color: #8FB88B;;
+  font-size: 22px;
+  text-align: center;
+}
+
+.edufloat{
+  width: 200px;
+  top: 350px;
+  right: 0px;
+  z-index: 1000;
+  position: fixed;
+  img{
+    width: 100%;
+  }
+}
+
+.text4{
+  font-size: 20px;
+  color: #82979C;
+  line-height: 200%;
+}
+
+
+.bnavbar-left-edu{
+  padding: 30px;
+  background-color: #43ED49;
+  z-index:100; 
+  position: fixed; 
+  top: 350px;
+  .bbtn-group-edu{
+    button{
+      background-color: #43ED49 !important;
+      border: none;
+      a{
+        font-size: 17px;
+        color: white;
+      }
+    }
+  }
+}
