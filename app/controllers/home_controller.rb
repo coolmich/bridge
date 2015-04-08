@@ -9,9 +9,9 @@ class HomeController < ApplicationController
   end
 
   def theme
-    @themes = ["主题公园","国家森林公园","名校项目","特色项目","体育活动","海滩","博物馆科技馆"]
+    @themes = ["主题公园","传统观光","名校项目","特色项目","体育活动","海滩","博物馆科技馆"]
     @index = params[:id].to_i
-    @images = ["themepark.png","forest.png","campus.png","tese.png","sports.png","beach.png","museum.png"]
+    @images = ["themepark.png","tranditional.png","campus.png","tese.png","sports.png","beach.png","museum.png"]
   end
 
   def place
@@ -90,7 +90,7 @@ class HomeController < ApplicationController
 Daizy的服务我们非常满意，跟他们旅行将会颠覆你对旅行社的成见！现在，我们头疼的是，有了这
 次经历，将来去别的地方旅行要求提高了很多啊！：）"
   ]
-    @from = ["------------摘自12岁宁波女孩昀的夏令营营地日记","------------摘自11岁深圳女孩蕊的私人定制家庭旅游日记","------------来自北京的Amy浪漫双人定制游"," --------来自加拿大的Susan双人友情定制游"," --------来自加拿大的Angela家庭私人定制游","--------来自宁波的Chessy的家庭私人定制游"]
+    @from = ["------------摘自12岁宁波女孩昀的夏令营营地日记","---------------摘自12岁宁波女孩昀的夏令营营地日记","------------来自北京的Amy浪漫双人定制游"," --------来自加拿大的Susan双人友情定制游"," --------来自加拿大的Angela家庭私人定制游","--------来自宁波的Chessy的家庭私人定制游"]
     @id = params[:id].to_i
   end
 

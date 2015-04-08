@@ -1,6 +1,6 @@
 <div class="xuanzelvyou">
   <div class="btn-group" role="group">
-  <p style="font-size: 20px;">请选择旅游类别</p>
+  <p style="font-size: 20px;">搜索您感兴趣的<br>旅游景点</p>
    <div class="btn-group" style="float: none;">
       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
         选择主题 <span class="caret"></span>
@@ -9,7 +9,7 @@
         <li>
           <%= link_to "主题公园", theme_path(:id=>0)%>
         </li>
-        <li><%= link_to "国家森林公园", theme_path(:id=>1)%></li>
+        <li><%= link_to "传统观光", theme_path(:id=>1)%></li>
         <li><%= link_to "名校项目", theme_path(:id=>2)%></li>
         <li><%= link_to "特色项目", theme_path(:id=>3)%></li>
         <li><%= link_to "体育活动", theme_path(:id=>4)%></li>
@@ -31,11 +31,6 @@
         <%= link_to "橙县", place_path(:id=>1)%>
       </li>
       <li><%= link_to "圣地亚哥", place_path(:id=>2)%></li>
-      <li class="divider"></li>
-      <li><a href="#">旧金山</a></li>
-      <li><a href="#">1号公路</a></li>
-      <li class="divider"></li>
-      <li><a href="#">拉斯维加斯</a></li>
     </ul>
     </div>
   </div>

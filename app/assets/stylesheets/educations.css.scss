@@ -35,14 +35,17 @@
 
 .bnavbar-left-edu{
   padding: 30px;
-  background-color: #43ED49;
+  background-color: #3D9905;
   z-index:100; 
   position: fixed; 
   top: 350px;
+  border: 4px solid green;
   .bbtn-group-edu{
     button{
-      background-color: #43ED49 !important;
+      background-color: #3D9905 !important;
       border: none;
+      text-align: left;
+      line-height: 2em;
       a{
         font-size: 17px;
         color: white;
