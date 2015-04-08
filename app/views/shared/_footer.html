@@ -2,14 +2,26 @@
   <div style="background-image: url(<%= asset_path imgName %>)" class="full-img">
     <div class="panel panel-default bpanelnocolor">
       <div class="panel-body bpanel-bodynocolor">
-        <div class="col-md-6">
-          <h2>联系方式</h2>
-          <h4>联系电话 PHONE: (001)949.232.3256 </h4>
+        <div class="col-md-6" >
+          <h2 style="line-height: 150%;">联系方式</h2>
+          <h4 style="line-height: 120%;">联系电话 PHONE: (001)949.232.3256 </h4>
           <h4>电子邮件 EMAIL: enlitebridge@gmail.com</h4>
           <h4>微信账号 WECHAT: CaliforniaSunlight(昵称:加州阳光) </h4>
+          <a class="btn" rel="popover" data-img="<%=image_path 'wechat.png'%>" data-original-title="" style="color: #4CC3D4; font-size: 20px; padding: 0px;">悬浮此处扫描添加微信</a>
         </div>
 
       </div>
     </div>
   </div>
 </div>
+
+  
+<script type="text/javascript">
+  $('a[rel=popover]').popover({
+    html: true,
+    trigger: 'hover',
+    content: function () {
+      return '<img src="'+$(this).data('img') + '" />';
+    }
+  });
+</script> 
