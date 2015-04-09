@@ -9,7 +9,7 @@ class EducationsController < ApplicationController
 
   end
 
-  # def download
-  #   send_file 'public'
-  # end
+  def download
+    send_file params[:file]
+  end
 end

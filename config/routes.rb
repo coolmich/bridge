@@ -19,6 +19,8 @@ Bridge::Application.routes.draw do
   get 'jiangzuo' => 'educations#jiangzuo'
   get 'hezuo' => 'educations#hezuo'
 
+  get 'download' => 'educations#download'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
