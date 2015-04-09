@@ -1,3 +1,19 @@
 <%= render 'shared/nav'%>
 <h1 style="background-color: #34A1C4; color: white; padding: 20px 100px; border-radius: 30px; float:left; margin-left: 50px;">旅游景点及活动介绍: <%= @places[@index]%></h1>
-<%= image_tag @images[@index], :style=>'width: 100%;'%>
+
+<!--这是一行的开始的代码-->
+<!--要做的很简单-->
+<!--1. image_tag 后面的 "huangyi.png" 里的文字替换成 图片的名字, 一定要英文-->
+<!--2. title 替换掉 The long title goes here-->
+<!--3. 内容 替换掉 The long long content goes here-->
+<div class="container">
+  <% if @index == 0%>
+    <%= render 'places/la'%>
+  <% elsif @index == 1%>    
+    <%= render 'places/oc'%>
+  <% elsif @index == 2%>    
+    <%= render 'places/sd'%>
+  <% end %>
+</div>
+
+<%= render 'shared/footer', :imgName => 'lianxifangshi.png' %>

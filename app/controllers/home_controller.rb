@@ -15,10 +15,8 @@ class HomeController < ApplicationController
   end
 
   def place
-    @places = ["洛杉矶","橙县","圣地亚哥","旧金山/硅谷","优胜美地国家公园",
-      "纳帕酒乡","西雅图","波特兰","拉斯维加斯","大峡谷国家公园"]
+    @places = ["洛杉矶","橙县","圣地亚哥"]
     @index = params[:id].to_i
-    @images = ["la.png","oc.png","sd.png"]
   end
 
   def comment
