@@ -1,3 +1,22 @@
 <%= render 'shared/nav'%>
 <h1 style="background-color: #34A1C4; color: white; padding: 20px 100px; border-radius: 30px; float:left; margin-left: 50px;">旅游景点及活动介绍: <%= @themes[@index]%></h1>
-<%= image_tag @images[@index], :style=>'width: 100%;'%>
+
+<div class="container">
+  <% if @index == 0%>
+    <%= render 'themes/park'%>
+  <% elsif @index == 1%>    
+    <%= render 'themes/traditional'%>
+  <% elsif @index == 2%>    
+    <%= render 'themes/campus'%>
+  <% elsif @index == 3%>    
+    <%= render 'themes/tese'%>
+  <% elsif @index == 4%>    
+    <%= render 'themes/sports'%>
+  <% elsif @index == 5%>    
+    <%= render 'themes/beach'%>
+  <% elsif @index == 6%>    
+    <%= render 'themes/museum'%>
+  <% end %>
+</div>
+
+<%= render 'shared/footer', :imgName => 'lianxifangshi.png' %>
